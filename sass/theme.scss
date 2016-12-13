@@ -1,0 +1,45 @@
+@import 'bourbon';
+
+/* Global Variables */
+$raleway: 'Raleway', sans-serif;
+$primary-color: #2c3e50;
+$secondary-color: #00b3fe;
+
+/* Custom Styles */
+@import './parallax.scss';
+@import './service.scss';
+@import './portfolio.scss';
+@import './team.scss';
+@import './footer.scss';
+
+/* Global Styles */
+.vertical-align {
+  position: absolute;
+  top: 50%;
+  @include transform(translateY(-50%));
+}
+
+.centered {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+body > :not(.pace),body:before,body:after {
+  -webkit-transition: opacity .4s ease-in-out;
+  -moz-transition: opacity .4s ease-in-out;
+  -o-transition: opacity .4s ease-in-out;
+  -ms-transition: opacity .4s ease-in-out;
+  transition: opacity .4s ease-in-out;
+}
+
+body:not(.pace-done) > :not(.pace),body:not(.pace-done):before,body:not(.pace-done):after {
+  opacity: 0;
+}
+
+.container-full {
+  width: 100%;
+  position: relative;
+}

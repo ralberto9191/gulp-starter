@@ -1,0 +1,9 @@
+section#service {
+  @include padding(4em null 4em null);
+
+  i {
+    font-size: 2.8em;
+    margin-bottom: 0.2em;
+    color: $secondary-color;
+  }
+}
